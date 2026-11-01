@@ -248,6 +248,19 @@ if(NOT STDEXEC_BUILD_MODULES)
     FOLDER
     test)
 
+  icm_add_build_failure_test(
+    NAME
+    test_on_fail1
+    TARGET
+    test_on_fail1
+    SOURCES
+    PARSE
+    stdexec/algos/adaptors/test_on_fail1.cpp
+    LIBRARIES
+    stdexec
+    FOLDER
+    test)
+
   if(STDEXEC_BUILD_RELACY_TESTS)
     add_subdirectory(rrd)
   endif()
